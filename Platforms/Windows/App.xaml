@@ -1,0 +1,8 @@
+﻿<maui:MauiWinUIApplication
+    x:Class="ProyectoProgramacionMovil_Andrade_Bedon_Moreta.WinUI.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:maui="using:Microsoft.Maui"
+    xmlns:local="using:ProyectoProgramacionMovil_Andrade_Bedon_Moreta.WinUI">
+
+</maui:MauiWinUIApplication>
