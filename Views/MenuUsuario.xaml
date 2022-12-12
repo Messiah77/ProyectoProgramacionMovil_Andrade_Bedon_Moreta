@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoProgramacionMovil_Andrade_Bedon_Moreta.Views.MenuUsuario"
+             xmlns:local="clr-namespace:ProyectoProgramacionMovil_Andrade_Bedon_Moreta.Views"
+             Title="MenuUsuario"
+            >
+    <local:GaleriaVehiculos
+        Title="Home"
+        IconImageSource="home_icon.png"/>
+    <local:VehiculosUsuario
+         Title="Mis Carros"
+        IconImageSource="car_icon.png"/>
+    <local:PerfilUsuario
+         Title="Perfil"
+        IconImageSource="profile_icon.png"/>
+    <!--<local:GaleriaVehiculos />
+    <NavigationPage Title="Schedule"
+                    >
+        <x:Arguments>
+            <local:AgregarVehiculo/>
+        </x:Arguments>
+    </NavigationPage>-->
+
+</TabbedPage>

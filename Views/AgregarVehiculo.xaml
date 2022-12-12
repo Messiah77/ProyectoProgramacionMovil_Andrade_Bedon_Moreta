@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoProgramacionMovil_Andrade_Bedon_Moreta.Views.AgregarVehiculo"
+             Title="AgregarVehiculo">
+    <VerticalStackLayout Margin="10">
+        <Label 
+            Text="Agregar Vehiculo"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label
+            Margin="0,50,0,0"
+            HorizontalOptions="CenterAndExpand"
+            Text="Año"
+            TextColor="#1C375C" />
+        <Entry
+            Margin="50,10,50,0"
+            HorizontalOptions="FillAndExpand"
+            Placeholder="2000"
+            x:Name="AnioInput"
+            Text="{Binding Anio}"
+            VerticalOptions="FillAndExpand" />
+       
+        <Label
+            Margin="0,10,0,0"
+            HorizontalOptions="CenterAndExpand"
+            Text="Marca"
+            TextColor="#1C375C" />
+        <Entry
+            x:Name="MarcaInput"        
+            Margin="50,10,50,0"
+            HorizontalOptions="FillAndExpand"
+            Placeholder="Chevrolete"
+            Text="{Binding Marca}"
+            VerticalOptions="FillAndExpand" />
+        <Label
+            Margin="0,10,0,0"
+            HorizontalOptions="CenterAndExpand"
+            Text="Modelo"
+            TextColor="#1C375C" />
+        <Entry
+            x:Name="ModeloInput"        
+            Margin="50,10,50,0"
+            HorizontalOptions="FillAndExpand"
+            Placeholder="Chevrolete"
+            Text="{Binding Modelo}"
+            VerticalOptions="FillAndExpand" />
+        <Label
+            Margin="50,10,50,0"
+            HorizontalOptions="CenterAndExpand"
+            Text="Precio"
+            TextColor="#1C375C" />
+        <Entry
+            x:Name="PrecioInput"        
+            Margin="50,10,50,0"
+            
+            HorizontalOptions="FillAndExpand"
+            Placeholder="$$$$"
+            Text="{Binding Precio}"
+            VerticalOptions="FillAndExpand" />
+    
+        <Label
+             Margin="0,10,0,0"
+             HorizontalOptions="CenterAndExpand"
+             Text="Foto"
+             TextColor="#1C375C" />
+     
+
+        <Image
+                x:Name="Image_Upload"
+                HeightRequest="100"
+                WidthRequest="100"
+                HorizontalOptions="Center" />
+        <Button
+            Margin="50,10,50,10"
+            x:Name="AgregarFoto"
+            Text="Subir"
+            Clicked="OnSubirClicked"></Button>
+        <Button
+            Margin="50"
+            x:Name="AgregarBtn"
+            Text="Agregar"
+            Clicked="onAgregarClicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>

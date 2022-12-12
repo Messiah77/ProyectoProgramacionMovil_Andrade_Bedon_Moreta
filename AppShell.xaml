@@ -4,11 +4,40 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ProyectoProgramacionMovil_Andrade_Bedon_Moreta"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:views="clr-namespace:ProyectoProgramacionMovil_Andrade_Bedon_Moreta.Views"
+     Shell.FlyoutHeaderBehavior="CollapseOnScroll">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+
+
+    <!--<FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent Title="Galeria"
+                          Icon=""
+                          ContentTemplate="{DataTemplate views:GaleriaVehiculos}" />
+
+        <ShellContent Title="Perfil"
+                          Icon=""
+                          ContentTemplate="{DataTemplate views:PerfilUsuario}" />
+
+
+    </FlyoutItem>-->
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        
+            <ShellContent Title="Galeria"
+                          Icon="cat.png"
+                          ContentTemplate="{DataTemplate views:GaleriaVehiculos}" />
+            <ShellContent Title="Perfil"
+                          Icon="dog.png"
+                          ContentTemplate="{DataTemplate views:PerfilUsuario}" />
+            <ShellContent Title="Agregar"
+                          Icon="dog.png"
+                          ContentTemplate="{DataTemplate views:AgregarVehiculo}" />
+        
+       
+    </FlyoutItem>
+
+  
+
 
 </Shell>

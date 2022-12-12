@@ -1,24 +1,21 @@
-﻿namespace ProyectoProgramacionMovil_Andrade_Bedon_Moreta;
+﻿using ProyectoProgramacionMovil_Andrade_Bedon_Moreta.Views;
+using ProyectoProgramacionMovil_Andrade_Bedon_Moreta.Controllers;
+using ProyectoProgramacionMovil_Andrade_Bedon_Moreta.Models;
+using System.Collections.ObjectModel;
+
+namespace ProyectoProgramacionMovil_Andrade_Bedon_Moreta;
 
 public partial class MainPage : ContentPage
 {
 	int count = 0;
+    public ObservableCollection<Vehiculo> VehiculosDB { get; set; } = new ObservableCollection<Vehiculo>();
 
-	public MainPage()
+    public MainPage()
 	{
 		InitializeComponent();
+		BindingContext = new Login();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
 }
 
